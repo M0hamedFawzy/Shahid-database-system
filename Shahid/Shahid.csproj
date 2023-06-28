@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F265EFC1-4EF9-4D23-AD52-4E6843C353CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Shahid</RootNamespace>
+    <AssemblyName>Shahid</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess">
+      <HintPath>C:\app\Mohamad_Fawzy\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADD_PLAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_PLAN.designer.cs">
+      <DependentUpon>ADD_PLAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_introduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_introduction.Designer.cs">
+      <DependentUpon>admin_introduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport_admin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport_admin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="film_actors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="film_actors.designer.cs">
+      <DependentUpon>film_actors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find_Actor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find_Actor.designer.cs">
+      <DependentUpon>Find_Actor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form3.designer.cs">
+      <DependentUpon>form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_admin_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_admin_report.Designer.cs">
+      <DependentUpon>Form_admin_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_user_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_user_report.Designer.cs">
+      <DependentUpon>Form_user_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_As_Admin_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_As_Admin_Form.designer.cs">
+      <DependentUpon>Login_As_Admin_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_As_User_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_As_User_Form.designer.cs">
+      <DependentUpon>Login_As_User_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form[GUI].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form[GUI].Designer.cs">
+      <DependentUpon>Main_Form[GUI].cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="search_by_title.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_by_title.designer.cs">
+      <DependentUpon>search_by_title.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_introduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_introduction.Designer.cs">
+      <DependentUpon>user_introduction.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADD_PLAN.resx">
+      <DependentUpon>ADD_PLAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_introduction.resx">
+      <DependentUpon>admin_introduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport_admin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport_admin.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="film_actors.resx">
+      <DependentUpon>film_actors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find_Actor.resx">
+      <DependentUpon>Find_Actor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form3.resx">
+      <DependentUpon>form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_admin_report.resx">
+      <DependentUpon>Form_admin_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_user_report.resx">
+      <DependentUpon>Form_user_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_As_Admin_Form.resx">
+      <DependentUpon>Login_As_Admin_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_As_User_Form.resx">
+      <DependentUpon>Login_As_User_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form[GUI].resx">
+      <DependentUpon>Main_Form[GUI].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="search_by_title.resx">
+      <DependentUpon>search_by_title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_introduction.resx">
+      <DependentUpon>user_introduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shahid_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shahid_logo_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_logo_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adb63c2da9e4f9b4e03fc88db19533b1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_logo_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 251.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 20_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 25_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shahid_logo_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decoration1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decoration11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decoration1_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decoration2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decoration2_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decoration3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decoration31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_decoration1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_decoration2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_decoration3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_decoration31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_decoration1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_decoration2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_decoration21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_pland1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_pland11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_pland1_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_pland12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_pland1_v3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_plans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 12.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
